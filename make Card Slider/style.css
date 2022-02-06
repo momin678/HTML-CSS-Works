@@ -1,0 +1,115 @@
+/* google font add */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f3f3f3;
+}
+section .card .image{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    padding: 3px;
+    background: rebeccapurple;
+}
+section .card .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+.card{
+    position: relative;
+    background: white;
+    border-radius: 20px;
+    margin: 20px 0;
+    width: 280px;
+}
+.card::before{
+    content: "";
+    position: absolute;
+    height: 35%;
+    width: 100%;
+    background: rgb(42, 81, 209);
+    border-radius: 20px 20px 0 0;
+}
+.card .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    z-index: 100;
+}
+.card .media-icon{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card .media-icon i{
+    color: #fff;
+    opacity: .6;
+    margin-top: 20px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.card .media-icon i:hover{
+    opacity: 1;
+}
+.card .name-profession{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    columns: #333;
+}
+.name-profession .name{
+    font-size: 20px;
+    font-weight: 600;
+}
+.name-profession .profession{
+    font-size: 15px;
+    font-weight: 500;
+}
+.card .ratting{
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+}
+.card .ratting i{
+    font-size: 18px;
+    margin: 0 2px;
+    color: rgb(42, 81, 209);
+}
+.card .button{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.card .button button{
+    background: rgb(42, 81, 209);
+    outline: none;
+    border: none;
+    color: #fff;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-size: 14px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.card .button button:hover{
+    background: rgb(42, 81, 200);
+}
