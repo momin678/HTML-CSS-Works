@@ -1,0 +1,68 @@
+*:not(h2, p) {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  body {
+    font-family: system-ui, sans-serif;
+    color: black;
+    background-color: white;
+  }
+  
+  nav {
+    background-color: dodgerblue;
+    color: aliceblue;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  #container {
+    position: relative;
+  }
+  
+  #sidebar {
+    width: 110px;
+    padding: 5px;
+    left: 0;
+    bottom: 0;
+    height: max-content;
+    background-color: #fbda61;
+    z-index: -9;
+  }
+  
+  .stickToTop {
+    position: absolute;
+    top: 0;
+  }
+  
+  .stickToBottom {
+    position: fixed;
+    bottom: 0;
+  }
+  
+  .stickToBottomAndScroll {
+    position: absolute;
+    bottom: 0;
+  }
+  
+  main {
+    background-color: #ffdee9;
+    margin-left: 110px;
+    padding: 20px;
+  }
+  
+  footer {
+    background-color: lightgreen;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  

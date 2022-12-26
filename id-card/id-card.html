@@ -1,0 +1,275 @@
+<style>
+    .id-card{
+        display: flex;
+    }
+    .student-id-card-frontpart{
+        height: 5.4cm;
+        width: 8.3cm;
+        background-color: #FCFCFC;
+        border: solid 1px #7A7977;
+        margin: 20px;
+    }
+    .id-card-header{
+        background-color: #099052;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 5px 0;
+    }
+    .text-arabic{
+        font-family: sans-serif;
+        color: #FEF30D;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .text-english{
+        font-family: sans-serif;
+        color: white;
+        font-size: 10px;
+        font-weight: 500;
+    }
+    .id-card-image{
+        padding: 10px 15px;
+        height: 80px;
+        width: 70px;
+    }
+    .id-card-body{
+        display: flex;
+    }
+    .id-card-image img{
+        border: solid 1px black;
+        width: 100%;
+        height: 100%;
+    }
+    .id-card-info{
+        font-family: sans-serif;
+        margin-bottom: 2px;
+    }
+    .id-card-titile{
+        font-size: 15px;
+        color: #404891;
+        margin: 10px 0 3px 0;
+        font-weight: 600;
+    }
+    .student-name{
+        font-size: 15px;
+        color: #DE383C;
+        margin: 3px 0;
+        font-weight: 600;
+        overflow: hidden;
+    }
+    table{
+        border-spacing: 0 !important;
+    }
+    tr td{
+        font-size: 10px;
+    }
+    .td-text{
+        color: #363636;
+        font-weight: bold;
+    }
+    .signature{
+        height: 62px;
+        background: #019251;
+        border-top-right-radius: 50px;
+        padding-right: 15px;
+    }
+    .id-card-principal-signatur{
+        height: 42px;
+        width: 100px;
+    }
+    .id-card-principal-signatur img{
+        height: 60%;
+        width: 100%;
+        padding-top: 12px;
+    }
+    .body-left p{
+        margin: 0;
+        text-align: center;
+        color: #fff;
+        background: #019251;
+    }
+    .web-site-link{
+        background: #019251;
+        height: 30px;
+        margin-left: -15px
+    }
+    .web-site-link span{
+        font-size: 11px;
+        color: #fff;
+        text-align: center;
+        margin: 13px;
+        line-height: 26px;
+    }
+    .student-id-card-backpart{
+        height: 5.4cm;
+        width: 8.3cm;
+        background-color: #FCFCFC;
+        border: solid 1px #7A7977;
+        margin: 20px;
+    }
+    .besp-logo{
+        align-items: center;
+        height: 60px;
+        width: 50px;
+        margin: 0 auto;
+    }
+    .besp-logo img{
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin: 5px 0;
+
+    }
+    .id-card-header-backend{
+        text-align: center;
+        margin: 3px 0;
+    }
+    .text-arabic-backend{
+        font-family: sans-serif;
+        color: #DB6A66;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .text-english-backend{
+        font-family: sans-serif;
+        color: #019251;
+        font-size: 12px;
+        font-weight: 300;
+    }
+    .recognized{
+        text-align: center;
+        font-size: 10px;
+        font-weight: bold;
+        margin: 5px 0;
+    }
+    .recognized-one{
+        color: #DB6A66;
+    }
+    .recognized-two{
+        color: #424238;
+    }
+    .web-site-link-backend{
+        text-align: center;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .contact{
+        text-align: center;
+        font-size: 10px;
+        margin: 5px 0;
+    }
+    .contact-one{
+        color: #424238;
+        font-weight: bold;
+    }
+    .contact-two{
+        color: #424238c4
+    }
+    @media print {
+        .id-card-header {
+            background: #099052 !important;
+            -webkit-print-color-adjust: exact; 
+        }
+        .signature{
+            background: #019251;
+            -webkit-print-color-adjust: exact;
+        }
+        .body-left p{
+            background: #019251;
+            -webkit-print-color-adjust: exact;
+        }
+        .web-site-link{
+            background: #019251;
+            height: 32px;
+            margin-left: -15px;
+            background: #019251;
+            -webkit-print-color-adjust: exact;
+        }
+        .student-name{
+            font-size: 1vw;
+        }
+    }
+</style>
+
+<div class="id-card">
+    <div class="student-id-card-frontpart">
+        <div class="id-card-header">
+            <span class="text-arabic">مدرسة بنجلاديش الإنجليزية الخاصة</span><br>
+            <span class="text-english">Bangladesh English Private School</span>
+        </div>
+        <div class="id-card-body">
+            <div class="body-left">
+                <div class="id-card-image">
+                    <img src="id-card-img.png" alt="student-image">
+                </div>
+                <div class="signature">
+                    <div class="id-card-principal-signatur">
+                        <img src="principal-signature.png" alt="rincipal-signatur">
+                    </div>
+                    <p>Principal</p>
+                </div>
+            </div>
+            <div class="body-right">
+                <div class="id-card-info">
+                    <p class="id-card-titile">Student's ID Card</p>
+                    <p class="student-name">Zarin tasnim nowmy mohammed delwar hossain</p>
+                    <table>
+                        <tr>
+                            <td>Father's Name</td>
+                            <td class="td-text"> : Haroonur Rashid</td>
+                        </tr>
+                        <tr>
+                            <td>Grade</td>
+                            <td class="td-text"> : 5</td>
+                        </tr>
+                        <tr>
+                            <td>Section</td>
+                            <td class="td-text"> : B</td>
+                        </tr>
+                        <tr>
+                            <td>Student Number</td>
+                            <td class="td-text"> : 123456</td>
+                        </tr>
+                        <tr>
+                            <td>Contact Number </td>
+                            <td class="td-text"> : 00971 5522 87869</td>
+                        </tr>
+                        <tr>
+                            <td>Validity</td>
+                            <td class="td-text"> : 31 Dec 2022</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="web-site-link">
+                    <span>www.bangladeshenglishprivateschool.com</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="student-id-card-backpart">
+        <div class="besp-logo">
+            <img src="besp-logo.png" alt="">
+        </div>
+        <div class="id-card-header-backend">
+            <span class="text-arabic-backend">مدرسة بنجلاديش الإنجليزية الخاصة</span><br>
+            <span class="text-english-backend">Bangladesh English Private School</span>
+        </div>
+        <div class="recognized">
+            <div class="recognized-one">Recongnized by mimistry of education u.a.e 2/25</div>
+            <div class="recognized-two">Affileated to bise, dhaka, school code: 9601</div>
+            <div class="recognized-two">college code: 9526-eiin:133909</div>
+        </div>
+        <div class="contact">
+            <div class="contact-one">Tel.: +97172236271, +9712233102, +97172238486</div>
+            <div class="contact-two">P.O.Box: 12275, Ras AL Khaimah-UAE</div>
+            <div class="contact-two">Email: bisrakuae@gmail.com</div>
+        </div>
+        <div class="web-site-link-backend">
+            <span>www.bangladeshenglishprivateschool.com</span>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    window.onload = function() { window.print(); }
+
+</script>
